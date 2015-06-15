@@ -9,7 +9,7 @@ class WPUsers(Base):
     id = Column(BigInteger, primary_key=True)
     user_login = Column(String(60), nullable=False, default="")
     user_pass = Column(String(64), nullable=False, default="")
-    user_nicenmae = Column(String(50), nullable=False, default="")
+    user_nicename = Column(String(50), nullable=False, default="")
     user_email = Column(String(100), nullable=False, default="")
     user_url = Column(String(100), nullable=False, default="")
     # FIXME Add default vlaue
